@@ -1,8 +1,8 @@
 puts 'Create one user'
-User.create! first_name: 'Jack', last_name: 'Sparrow', address: 'Black Pearl', phone_number: '123456789'
+User.create! email: 'jack@sparrow.com', password: '123456', first_name: 'Jack', last_name: 'Sparrow', address: 'Black Pearl', phone_number: '123456789'
 
 puts 'Create another user'
-User.create! first_name: 'Elizabeth', last_name: 'Swann', address: 'London', phone_number: '123456789'
+User.create! email: 'elizabeth@swann.com', password: '123456', first_name: 'Elizabeth', last_name: 'Swann', address: 'London', phone_number: '123456789'
 
 
 puts 'Create offers'
