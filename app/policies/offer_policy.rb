@@ -3,12 +3,14 @@ class OfferPolicy < ApplicationPolicy
     def resolve
       # Allow the user to see it only if the user is the owner or the customer
       
-      # the 'hard' solution is implemented here
+      # the 'hardcore' solution is implemented here
       # scope.joins(:bookings).where(owner: user)
       #      .or(
       #        scope.joins(:bookings).where(bookings: { customer: user }
       #      ))
 
+      # The easy solution is to do somethin different in the view
+      # We're going to do this for the bookings#index
       scope.all
     end
   end
