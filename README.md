@@ -6,7 +6,7 @@ This is a demo to show-case how we can authorize a model with a user using anoth
 
 Check my other demos [here](https://github.com/andrerferrer/dedemos#ded%C3%A9mos)
 
-We'll implement this as a scope and in the create action.
+We'll implement this mainly in the Booking index and create actions.
 
 ## Where does this come from?
 
