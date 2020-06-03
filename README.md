@@ -1,10 +1,16 @@
 # DEMO
-This was created from [this repo](https://github.com/andrerferrer/rename-references-demo) 
+
+## What is this?
 
 This is a demo to show-case how we can authorize a model with a user using another model in a rails app.
+Check my other demos [here](https://github.com/andrerferrer/dedemos#ded%C3%A9mos)
 We'll implement this as a scope and in the create action.
 
-## Schema
+## Where does this come from?
+
+This was created from [this repo](https://github.com/andrerferrer/rename-references-demo) 
+
+## The Schema
 This is the schema.
 Offer here represents whatever you're offering: a pet, an apartment, a ride in you car etc.
 A booking here represents the purchasing of this offer.
