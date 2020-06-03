@@ -14,6 +14,10 @@ class OfferPolicy < ApplicationPolicy
       scope.all
     end
   end
+
+  def not_owner?
+    user != record.owner
+  end
   
   def show?
     # everyone can see it

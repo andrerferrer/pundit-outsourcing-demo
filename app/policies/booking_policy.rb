@@ -17,4 +17,10 @@ class BookingPolicy < ApplicationPolicy
   def index?
     record.customer == user || record.offer.owner == user
   end
+
+  def create?
+    # You can create a booking if 
+    # you're not the owner of the offer
+    OfferPolicy.new(user, record.offer).not_owner?
+  end
 end
