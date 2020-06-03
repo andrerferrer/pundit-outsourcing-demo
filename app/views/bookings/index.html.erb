@@ -1,2 +1,20 @@
 <h1>Bookings#index</h1>
-<p>Find me in app/views/bookings/index.html.erb</p>
+
+
+<% @bookings.each do |booking| %>
+
+  <%# Protect it in the front-end: %>
+  <%# the user can see it if the user is in the policy for booking#index? %>
+  <% if policy(booking).index? %>
+    <h2>
+      Booking offer: <%= booking.offer.name %>
+    </h2>
+    <p>
+      Owner: <%= "#{booking.offer.owner.first_name} #{booking.offer.owner.last_name}" %>
+    </p>
+    <p>
+      Customer: <%= "#{booking.customer.first_name} #{booking.customer.last_name}" %>
+    </p>
+  <% end %>
+
+<% end %>
