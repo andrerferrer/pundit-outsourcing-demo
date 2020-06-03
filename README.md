@@ -3,7 +3,9 @@
 ## What is this?
 
 This is a demo to show-case how we can authorize a model with a user using another model in a rails app.
+
 Check my other demos [here](https://github.com/andrerferrer/dedemos#ded%C3%A9mos)
+
 We'll implement this as a scope and in the create action.
 
 ## Where does this come from?
