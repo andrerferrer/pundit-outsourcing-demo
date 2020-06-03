@@ -14,7 +14,9 @@ This was created from [this repo](https://github.com/andrerferrer/rename-referen
 
 ## The Schema
 This is the schema.
+
 Offer here represents whatever you're offering: a pet, an apartment, a ride in you car etc.
+
 A booking here represents the purchasing of this offer.
 
 ```
