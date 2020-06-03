@@ -4,3 +4,12 @@
     <%= "#{key} => #{value}" %>
   </p>
 <% end %>
+
+<%# The below is a protection in the front-end %>
+<%# If you want to see the protection in the back-end, go to BookingPolicy#create? %>
+
+<%# You can only create a booking for this offer %>
+<%# If you're not the owner %>
+<% if policy(@offer).not_owner? %>
+  <%= link_to "Book #{@offer.name}", offer_bookings_path(@offer), method: :create %>
+<% end %>
