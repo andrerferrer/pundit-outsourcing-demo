@@ -13,7 +13,7 @@ class BookingPolicy < ApplicationPolicy
   end
 
   # the 'easy' solution is implemented here and in the offers#index view as a conditional (if/else)
-  # we will implement this in the BookingsController#index as well
+  # we will implement this in the Bookings#index as well
   def index?
     record.customer == user || record.offer.owner == user
   end
