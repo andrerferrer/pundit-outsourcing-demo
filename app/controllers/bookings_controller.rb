@@ -8,8 +8,8 @@ class BookingsController < ApplicationController
   def create
     @offer = Offer.find params[:offer_id]
     @booking = Booking.new(
-      customer: current_user,
-      offer: @offer
+      offer: @offer,
+      customer: current_user
     )
     
     # Create the booking if the user is not the owner 
@@ -18,6 +18,7 @@ class BookingsController < ApplicationController
     if @booking.save
       redirect_to bookings_path
     else
+      flash[:alert] = @booking.errors.messages
       render 'offers/show'
     end
 
